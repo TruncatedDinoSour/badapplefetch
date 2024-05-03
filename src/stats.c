@@ -258,7 +258,7 @@ unsigned char CPU_init(CPU *cpu) {
             strncpy(cpu->model, strchr(line, ':') + 2, 64);
             cpu->model[strcspn(cpu->model, "\n")] = 0;
         } else if (strncmp(line, "processor", 9) == 0)
-            cpu->core_count += 1;
+            cpu->core_count += (uint8_t)1;
 
     fclose(fp_cpu);
 
