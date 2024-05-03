@@ -257,8 +257,8 @@ unsigned char CPU_init(CPU *cpu) {
         if (strncmp(line, "model name", 10) == 0) {
             strncpy(cpu->model, strchr(line, ':') + 2, 64);
             cpu->model[strcspn(cpu->model, "\n")] = 0;
-        } else if (strncmp(line, "processor", 9) == 0 && cpu->core_count < 255)
-            cpu->core_count += 1;
+        } else if (cpu->core_count < 255 && strncmp(line, "processor", 9) == 0)
+            ++cpu->core_count;
 
     fclose(fp_cpu);
 
