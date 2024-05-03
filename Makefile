@@ -36,8 +36,9 @@ logos.c: scripts/gen_logos.sh
 	mkdir -p logos/
 	bash ./scripts/gen_logos.sh >logos.c
 
-audio.c: audio.ogg scripts/gen_audio.sh
-	bash ./scripts/gen_audio.sh >audio.c
+audio.c: audio.ogg scripts/gen_audio.c
+	$(CC) -o audio_generator scripts/gen_audio.c -Ofast
+	./audio_generator >audio.c
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
