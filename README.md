@@ -22,6 +22,16 @@ As the creator of Neofetch has [picked up farming](https://github.com/dylanaraps
 -   If you want to use youtube-dl instead of yt-dlp, type `export YT=yt-dlp`
 -   Now, compile! Type `make -j$(nproc --all)` (`nproc --all` will just turn into your core count)
 
+So, basically:
+
+    LIBMPV=1 make -j$(nproc --all)
+
+Should be enough for most people
+
+# Credits
+
+-   The video used for audio and video: <https://www.youtube.com/watch?v=FtutLA63Cp8>
+
 # Screenshot
 
 ![Screenshot of BadAppleFetch](/screenshot.jpg)
