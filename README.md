@@ -25,3 +25,5 @@ As the creator of Neofetch has [picked up farming](https://github.com/dylanaraps
 # Screenshot
 
 ![Screenshot of BadAppleFetch](/screenshot.jpg)
+
+Live demonstration: <https://www.youtube.com/watch?v=C9wIdshX__g>
