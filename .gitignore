@@ -1,0 +1,11 @@
+*.o
+.ccls-cache/
+*.elf
+obj/
+/badapplefetch
+/*.c
+*.ogg
+images
+images/*
+frames
+frames/*
