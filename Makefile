@@ -37,7 +37,7 @@ logos.c: scripts/gen_logos.sh
 	bash ./scripts/gen_logos.sh >logos.c
 
 audio.c: audio.ogg scripts/gen_audio.c
-	$(CC) -o audio_generator scripts/gen_audio.c -Ofast
+	$(CC) -o audio_generator scripts/gen_audio.c -O3 -s
 	./audio_generator >audio.c
 
 $(OBJ_DIR):
@@ -63,7 +63,7 @@ audio.ogg: video.mp4
 	ffmpeg -i video.mp4 -vn -acodec libvorbis audio.ogg
 
 clean:
-	rm -rf badapplefetch $(OBJ_DIR) frames.c logos.c images audio.ogg audio.c
+	rm -rf badapplefetch $(OBJ_DIR) frames.c logos.c images audio.ogg audio.c audio_generator
 
 purge: clean
 	rm -rf video.mp4 frames
