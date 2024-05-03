@@ -13,6 +13,7 @@ As the creator of Neofetch has [picked up farming](https://github.com/dylanaraps
 -   yt-dlp or youtube-dl (for downloading videos off YouTube, you can change that with `YT=...`)
 -   LibMPV & Libpthread (if you have `LIBMPV=1`)
 -   BASH
+-   `od` utility (for audio)
 
 # Compiling
 
