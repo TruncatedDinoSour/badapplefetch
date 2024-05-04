@@ -31,6 +31,12 @@ Should be enough for most people
 # Credits
 
 -   The video used for audio and video: <https://www.youtube.com/watch?v=FtutLA63Cp8>
+-   Logos mainly extracted from: <https://github.com/dylanaraps/pfetch>
+
+# Logo
+
+-   If you want a specific logo to show up, supply it in the command line of BadAppleFetch, such as `./badapplefetch ubuntu`
+-   If you want to add a logo, please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 # Screenshot
 
