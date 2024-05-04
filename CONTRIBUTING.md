@@ -23,11 +23,12 @@ If you want to add a new logo, please keep these things in mind:
 export STRIP=llvm-strip
 export STRIPFLAGS='--strip-debug --strip-sections --strip-unneeded -T --remove-section=.note.gnu.gold-version --remove-section=.note --strip-all --discard-locals --remove-section=.gnu.version --remove-section=.eh_frame --remove-section=.note.gnu.build-id --remove-section=.note.ABI-tag --strip-symbol=__gmon_start__ --strip-all-gnu --remove-section=.comment --remove-section=.eh_frame_ptr --discard-all'
 export CC=clang
-export CFLAGS='-Wpedantic -flto=full -fno-trapping-math -fstrict-aliasing -fno-math-errno -fno-stack-check -fno-strict-overflow -funroll-loops -fno-stack-protector -fvisibility-inlines-hidden -mfancy-math-387 -fomit-frame-pointer -fstrict-overflow -Wshadow -fuse-ld=lld -s -fno-exceptions -D_FORTIFY_SOURCE=0 -Wall -Wextra -fno-signed-zeros -fno-strict-aliasing -pedantic -Ofast -fvisibility=hidden -ffast-math -funsafe-math-optimizations -std=c99 -fno-asynchronous-unwind-tables -Werror -fdiscard-value-names -femit-all-decls -fmerge-all-constants -fno-use-cxa-atexit -fno-use-init-array -march=native -mtune=native -pedantic-errors'
+export CFLAGS='-Wpedantic -flto=full -fno-trapping-math -fstrict-aliasing -fno-math-errno -fno-stack-check -fno-strict-overflow -funroll-loops -fno-stack-protector -fvisibility-inlines-hidden -mfancy-math-387 -fomit-frame-pointer -fstrict-overflow -Wshadow -fno-exceptions -D_FORTIFY_SOURCE=0 -Wall -Wextra -fno-signed-zeros -fno-strict-aliasing -pedantic -Ofast -fvisibility=hidden -ffast-math -funsafe-math-optimizations -std=c99 -fno-asynchronous-unwind-tables -Werror -fdiscard-value-names -femit-all-decls -fmerge-all-constants -fno-use-cxa-atexit -fno-use-init-array -march=native -mtune=native -pedantic-errors'
 export LIBMPV=1
+export FPS=30
 ```
 
-`NOQA` must not be set.
+`NOQA` must not be set. (`unset NOQA`)
 
 ```sh
 make purge
