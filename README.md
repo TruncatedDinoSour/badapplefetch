@@ -26,7 +26,7 @@ So, basically:
 
     LIBMPV=1 make -j$(nproc --all)
 
-Should be enough for most people
+Should be enough for most people. For more optimized flags see [CONTRIBUTING.md](/CONTRIBUTING.md).
 
 # Credits
 
