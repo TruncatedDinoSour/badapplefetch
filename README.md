@@ -28,6 +28,10 @@ So, basically:
 
 Should be enough for most people. For more optimized flags see [CONTRIBUTING.md](/CONTRIBUTING.md).
 
+# Forks
+
+- "Skibidi Toilet... In a fetch script" by Zayd: https://git.inamatrix.xyz/zayd/skibidifetch
+
 # Credits
 
 -   The video used for audio and video: <https://www.youtube.com/watch?v=FtutLA63Cp8>
